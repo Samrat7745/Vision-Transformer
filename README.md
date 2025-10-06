@@ -33,7 +33,7 @@ The Vision Transformer (ViT) applies a Transformer architecture, originally desi
 
 
 
-3. **Best accuracy tested**
+ **Best accuracy tested**
 
    ```
    Test Accuracy: 67.35%
@@ -49,7 +49,7 @@ The Vision Transformer (ViT) applies a Transformer architecture, originally desi
    git clone <repo-url>
    cd <repo-directory>
    ```
-2. install dependencies:
+2. install dependencies(for non colab only):
 
    ```bash
    pip install -r requirements.txt
@@ -59,7 +59,7 @@ The Vision Transformer (ViT) applies a Transformer architecture, originally desi
 
 ## Usage
 
-Open the .ipynb file and run all cells
+Open the .ipynb file in colab and run all cells
 
 ---
 
@@ -77,30 +77,12 @@ This guide explains how to use the **pretrained SAM2 (Segment Anything Model 2)*
 
 ## Usage Steps
 
-1. **Prepare your images**
+1. Run all the cells
 
-   * Organize your images in a folder for processing.
+2. Upload the Image, JPG,JPEG,etc. other support format by 
 
-2. **Load the pretrained SAM2 model**
+3. Enter the text prompt.
 
-   * Use the model in evaluation mode for inference.
-
-3. **Load the Grounding DINO model**
-
-   * Use it to generate text prompts based on the content of the images.
-
-4. **Generate text prompts**
-
-   * Apply Grounding DINO on your images to create descriptive prompts for segmentation.
-
-5. **Segment images using SAM2**
-
-   * Provide the generated text prompts to SAM2 to obtain segmentation masks.
-
-6. **Visualize or save results**
-
-   * Save the segmentation masks or visualize them directly for analysis.
+4. Scroll down to see the whole processing and the final segmentation.
 
 ---
-
-This workflow allows you to perform image segmentation using SAM2 guided by **Grounding DINO text prompts**, without needing to train any models.
